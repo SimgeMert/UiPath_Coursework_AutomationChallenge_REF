@@ -1,0 +1,217 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Main.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_Invoices&StateMachine_1",
+        "TransactionItem&StateMachine_1",
+        "SystemException&StateMachine_1",
+        "BusinessException&StateMachine_1",
+        "TransactionNumber&StateMachine_1",
+        "Config&StateMachine_1",
+        "RetryNumber&StateMachine_1",
+        "TransactionField2&StateMachine_1",
+        "TransactionField1&StateMachine_1",
+        "TransactionID&StateMachine_1",
+        "dt_TransactionData&StateMachine_1",
+        "ConsecutiveSystemExceptions&StateMachine_1",
+        "ShouldStop&Sequence_25"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_OrchestratorQueueName",
+        "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "DT_InvoiceData&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DT_Invoices",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InitializationWorkflows/InvoiceDataExtractionFromBrowser.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "new_str_DT&Sequence_11",
+        "qwf&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DT_InvoiceData",
+        "in_AutomationChallenge_Url"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InitializationWorkflows/AddQueue.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_DataSequence&Sequence_2",
+        "str_InvoiceUrl&Sequence_2",
+        "str_DueDate&Sequence_2",
+        "str_ID&Sequence_2",
+        "qwf&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ORCFolderPath",
+        "in_QueueName",
+        "in_DTProcess"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/Process.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_InvoiceDates&Sequence_1",
+        "deneme&Sequence_1",
+        "str_Tax&Sequence_1",
+        "str_SubTotal&Sequence_1",
+        "str_TotalDue&Sequence_1",
+        "str_CompanyName&Sequence_1",
+        "str_InvoiceNumber&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DT_Invoices",
+        "in_DT_Invoices",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/InvoiceRead.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "str_InvoiceNumber&Sequence_3",
+        "qwf&Sequence_2",
+        "invoice_Image&Sequence_2",
+        "str_invoice_text&Sequence_2",
+        "str_InvoicePath&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_str_CompanyName",
+        "out_str_SubTotal",
+        "out_str_Tax",
+        "out_str_TotalDue",
+        "out_str_InvoiceDates",
+        "deneme",
+        "in_str_InvoiceUrl",
+        "in_str_DataSequence"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "WritingInvoiceDataToExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "qwf&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_str_TotalDue",
+        "in_str_Tax",
+        "in_str_SubTotal",
+        "in_str_InvoiceDate",
+        "in_str_InvoiceUrl",
+        "in_str_DueDate",
+        "in_str_ID",
+        "in_str_DataSequence",
+        "in_DT_Invoices"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "InitializationWorkflows/InvoiceDataTableCreat.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "qwf&Sequence_10"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_DT_Invoices"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "EndProcessWorkflows/SendMail.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "qwf&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Path_InvoiceDetailsExcel"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "ProcessWorkflows/WritingInvoiceDataTable.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "qwf&Sequence_2",
+        "in_str_InvoiceUrl&Sequence_2",
+        "out_str_CompanyName&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_str_DataSequence",
+        "in_str_ID",
+        "in_str_CompanyName",
+        "in_str_SubTotal",
+        "in_str_Tax",
+        "in_str_TotalDue",
+        "in_DT_Invoices",
+        "out_DT_Invoices",
+        "in_str_InvoiceDates",
+        "in_str_DueDates"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "EndProcessWorkflows/WritingInvoiceDataToExcel.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "qwf&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_DT_Invoices",
+        "in_Path_InvoiceDetailsExcel"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/CloseAllApplications.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_DT_Invoices",
+        "in_Path_InvoiceDetailsExcel"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

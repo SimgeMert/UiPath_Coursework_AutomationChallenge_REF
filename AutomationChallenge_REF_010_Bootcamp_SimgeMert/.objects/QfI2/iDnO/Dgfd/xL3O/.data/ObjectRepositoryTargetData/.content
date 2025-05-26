@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LZDsHfQqu02iMimRBYWAKg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallengeocr.azurewebsites.net/invoices/8.jpg" CVScreenId="7b73287d-8323-4143-b712-cdcd460bf585" CvTextArea="697, 198, 109, 16" CvType="AnyWordGroup" DesignTimeRectangle="0, 0, 1936, 1048" DesignTimeScaleFactor="1" ElementType="Text" Guid="0a2582d1-4dee-414f-86c3-984935ac25af" ScopeSelectorArgument="&lt;html app='chrome.exe' title='8.jpg (793×1122)' url='https://rpachallengeocr.azurewebsites.net/invoices/*.jpg' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V5" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7b73287d-8323-4143-b712-cdcd460bf585" CvTextArea="1129, 191, 110, 24" CvTextArgument="INVOICE" CvType="Text" DesignTimeRectangle="1129, 191, 110, 24" ElementType="Text" Guid="133eb96b-87fb-4f1c-b9d4-58dd36e082db" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a7d399afdd0fa63fc66838bf418e4e4e.png" xmlns="">0I1NItkXO5EuPwrdHBnVevQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

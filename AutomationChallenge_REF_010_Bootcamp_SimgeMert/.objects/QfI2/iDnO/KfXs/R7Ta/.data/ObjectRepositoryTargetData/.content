@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dEXut5EJ0ki0FOlDVLcjQQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="rpachallengeocr.azurewebsites.net" CVScreenId="3496a2c4-6744-4418-ae5f-e142ce3efc83" DesignTimeRectangle="23, 177, 279, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl id='navtitle' tag='SPAN' aaname='Automation Challenge' /&gt;" Guid="a33061f1-8c68-4f31-b999-da653eb67a3c" ScopeSelectorArgument="&lt;html app='chrome.exe' url='https://rpachallengeocr.azurewebsites.net/' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bb09de111428879892393c2d3056ac56.png" xmlns="">0c6-3MSTZAkiYQwaiIj230A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
